@@ -5,7 +5,9 @@ export default function LowStockList({ items }) {
     <div className="bg-white rounded-xl p-4 shadow-sm border">
       <h3 className="text-lg font-semibold mb-3">Low Stock Items</h3>
       <ul className="space-y-2">
-        {items.length === 0 && <p className="text-gray-500 text-sm">No low-stock items.</p>}
+        {items.length === 0 && (
+          <p className="text-gray-500 text-sm">No low-stock items.</p>
+        )}
 
         {items.map((item) => (
           <li
@@ -13,23 +15,15 @@ export default function LowStockList({ items }) {
             className="flex items-center justify-between p-2 bg-red-50 border border-red-200 rounded-lg"
           >
             <span className="font-medium text-gray-800">{item.name}</span>
-            <span className="text-red-600 font-semibold">{item.stock} left</span>
+            <span className="text-red-600 font-semibold">
+              {item.stock} left
+            </span>
           </li>
         ))}
       </ul>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
 
 // import React from 'react'
 // export default function LowStockList({ items }){

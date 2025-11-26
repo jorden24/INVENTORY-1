@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { api } from '../../lib/mockApi'
+import  api  from '../../lib/mockApi'
 
 
 export default function Categories(){

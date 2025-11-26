@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import { api } from '../../lib/mockApi'
+import api  from '../../lib/mockApi'
 
 export default function CreateSale(){
   const [items, setItems] = useState([])

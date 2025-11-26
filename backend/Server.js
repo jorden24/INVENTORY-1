@@ -11,7 +11,7 @@ app.use(express.json())
 connectDB()
 
 // routes
-app.use('/api/items', require('./src/routes/items'))
+app.use('/api/', require('./src/routes/items'))
 app.use('/api/categories', require('./src/routes/categories'))
 app.use('/api/sales', require('./src/routes/sales'))
 
